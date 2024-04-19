@@ -1,5 +1,20 @@
 # FlyFish Test Task
 
+## Task Instructions
+Use BDD approach to test "petstore" https://petstore.swagger.io/ RESTful Web Service.
+
+Your task is to test POST /pet service:
+
+- Use any BDD framework of your choice, e.g., Cucumber
+
+- Use any JavaScript testing libraries, e.g., Jest
+
+- Identify and model Steps needed to test the feature. Please use some pseudo code to show your approach to implementing the steps.
+
+- Implement the test scenarios using the Steps
+
+- Use any version control software to develop and submit the above exercise e.g., Git.
+
 ## Steps to test the feature:
 
 - Install Cypress
@@ -9,6 +24,7 @@
 - Write code defining the various Given When Then steps needed for the scenarios
 - Create test data in the form of fixtures 
 - Run tests
+
 
 
 ## Text Cases in plain text
