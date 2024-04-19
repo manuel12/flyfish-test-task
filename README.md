@@ -21,7 +21,6 @@ Your task is to test POST /pet service:
 - The tests should run then
 - Alternatively you can also run `npx cypress run` after installation to run tests on the CLI
 
-
 ## Steps to test the feature:
 
 - Install Cypress
@@ -32,7 +31,9 @@ Your task is to test POST /pet service:
 - Create test data in the form of fixtures 
 - Run tests
 
-
+## Important Files:
+- Scenario definition file: [cypress/e2e/pet-store/add-pet.feature](cypress/e2e/pet-store/add-pet.feature)
+- Steps definition file: [cypress/e2e/pet-store/add-pet.js](cypress/e2e/pet-store/add-pet.js)
 
 ## Text Cases in plain text
     Happy paths:
