@@ -11,7 +11,7 @@ Your task is to test POST /pet service:
 - Implement the test scenarios using the Steps
 - Use any version control software to develop and submit the above exercise e.g., Git.
 
-## Installation Instructions
+## Installation Instructions & Running Tests
 - Clone the repo locally and cd to flyfish-test-task directory
 - On repo's root directory run `npm install`
 - When installation is finished run `npx cypress open`
@@ -19,6 +19,7 @@ Your task is to test POST /pet service:
 - On 'Choose a browser' choose your favorite browser
 - Then on the next screen that popups click on 'add-pet.feature'
 - The tests should run then
+- Alternatively you can also run `npx cypress run` after installation to run tests on the CLI
 
 
 ## Steps to test the feature:
