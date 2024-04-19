@@ -78,8 +78,11 @@
 
  ## Notes
 
- All though nothing in the petstore documentation for the POST /pet endpoint mentions that status code 201 will be returned I found it confusing and a bit misleading to return code 200 when a record has been successfully created. Therefore I've tested the API endpoint as I expect any other API to work: by returning  201 on a successfully created record and 400 on a bad request whether this be by invalid data types or missing required data. I supposed the https://petstore.swagger.io/ team simply didn't go into such detail when developing this demo API.
+Although nothing in the petstore documentation for the POST /pet endpoint mentions that status code 201 will be returned I found it confusing and a bit misleading to return code 200 when a record has been successfully created. Therefore I've tested the API endpoint as I expect any other API to work: by returning 201 on a successfully created record and 400 on a bad request, whether this be by invalid data types or missing required data.  This is the reason why most tests currently fail. I decided to leave them like this as to pass the tests with incorrect status code in my opinion wouldn't be ideal.
 
- I've also expected in this tests to not only return the appropriate status code but also gracefully handle any misisng or invalid inputs with error messages. This is because I would expect an API to inform the user about what exactly was missing or wrong about it's inputs.
+I suppose the https://petstore.swagger.io/ team simply didn't go into such detail when developing this demo API.
+
+I've also expected in these tests to not only return the appropriate status code but also gracefully handle any missing or invalid inputs with error messages. This is because I would expect an API to inform the user about what exactly was missing or wrong about its inputs.
+
 
  
