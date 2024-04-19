@@ -6,14 +6,20 @@ Use BDD approach to test "petstore" https://petstore.swagger.io/ RESTful Web Ser
 Your task is to test POST /pet service:
 
 - Use any BDD framework of your choice, e.g., Cucumber
-
 - Use any JavaScript testing libraries, e.g., Jest
-
 - Identify and model Steps needed to test the feature. Please use some pseudo code to show your approach to implementing the steps.
-
 - Implement the test scenarios using the Steps
-
 - Use any version control software to develop and submit the above exercise e.g., Git.
+
+## Installation Instructions
+- Clone the repo locally and cd to flyfish-test-task directory
+- On repo's root directory run `npm install`
+- When installation is finished run `npx cypress open`
+- On 'Welcome  to Cypress!' screen choose E2E testing
+- On 'Choose a browser' choose your favorite browser
+- Then on the next screen that popups click on 'add-pet.feature'
+- The tests should run then
+
 
 ## Steps to test the feature:
 
@@ -46,48 +52,48 @@ Your task is to test POST /pet service:
 ## Text Cases as BDD scenarios
 
     Happy paths:
-    Add a new pet with valid data and check status code and response body
-    Add a new pet with valid data and check response body contains ID
-    Add a new pet with only required fields data and check status code and response body
+    - Add a new pet with valid data and check status code and response body
+    - Add a new pet with valid data and check response body contains ID
+    - Add a new pet with only required fields data and check status code and response body
 
     Negative paths:
-    Add a new pet with empty object as data and check status code and response body
-    Add a new pet with missing required fields and check status code and response body
-    Add a new pet with invalid data type for name field and check status code and response body
-    Add a new pet with invalid data type for photoUrls field and check status code and response body
-    Add a new pet with invalid data type for category field and check status code and response body
-    Add a new pet with invalid data type for tags field and check status code and response body
-    Add a new pet with invalid data type for status field and check status code and response body
+    - Add a new pet with empty object as data and check status code and response body
+    - Add a new pet with missing required fields and check status code and response body
+    - Add a new pet with invalid data type for name field and check status code and response body
+    - Add a new pet with invalid data type for photoUrls field and check status code and response body
+    - Add a new pet with invalid data type for category field and check status code and response body
+    - Add a new pet with invalid data type for tags field and check status code and response body
+    - Add a new pet with invalid data type for status field and check status code and response body
 
  ## Current results and reasons for failures
 
-    ❌ Add a new pet with valid data and check status code and response body
+    ❌ - Add a new pet with valid data and check status code and response body
     Test expects a status code 201 on successful pet creation it receives a 200 code instead
 
-    ✅ Add a new pet with valid data and check response body contains ID
+    ✅ - Add a new pet with valid data and check response body contains ID
 
-    ❌ Add a new pet with only required fields data and check status code and response body
+    ❌ - Add a new pet with only required fields data and check status code and response body
     Test expects a status code 201 on successful pet creation it receives a 200 code instead
 
-    ❌ Add a new pet with empty object as data and check status code and response body
+    ❌ - Add a new pet with empty object as data and check status code and response body
     Test expects a status code 400 on sending a bad request it receives a 200 code instead
 
-    ❌ Add a new pet with missing required fields and check status code and response body
+    ❌ - Add a new pet with missing required fields and check status code and response body
     Test expects a status code 400 on sending a bad request it receives a 200 code instead
 
-    ❌ Add a new pet with invalid data type for name field and check status code and response body
+    ❌ - Add a new pet with invalid data type for name field and check status code and response body
     Test expects a status code 400 on sending a bad request it receives a 200 code instead
 
-    ❌ Add a new pet with invalid data type for photoUrls field and check status code and response body
+    ❌ - Add a new pet with invalid data type for photoUrls field and check status code and response body
     Test expects a status code 400 on sending a bad request it receives a 500 code instead
 
-    ❌ Add a new pet with invalid data type for category field and check status code and response body
+    ❌ - Add a new pet with invalid data type for category field and check status code and response body
     Test expects a status code 400 on sending a bad request it receives a 500 code instead
 
-    ❌ Add a new pet with invalid data type for tags field and check status code and response body
+    ❌ - Add a new pet with invalid data type for tags field and check status code and response body
     Test expects a status code 400 on sending a bad request it receives a 500 code instead
 
-    ❌ Add a new pet with invalid data type for status field and check status code and response body
+    ❌ - Add a new pet with invalid data type for status field and check status code and response body
     Test expects a status code 400 on sending a bad request it receives a 200 code instead
 
 
