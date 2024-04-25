@@ -25,7 +25,7 @@ Given("I have an empty object as data to add a pet", () => {
   context.petData = emptyObjectPetData;
 });
 
-Given("I have data missing required fields to add a pet", () => {
+Given("I have an object missing required fields as data to add a pet", () => {
   context.petData = missingRequiredFieldsPetData;
 });
 
@@ -71,7 +71,7 @@ Then(
   }
 );
 
-Then("the response body should have an ID", () => {
+Then("the response should have an ID inside body keys", () => {
   cy.get("@postRequest").then((response) => {
     expect(response.body).to.have.property("id");
   });
